@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de scores</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+   <header>
+    <h1>Tableau des Scores</h1>
+    <p>Le 17 novembre 2025</p>
+    </header> 
+        <main>
+            <section>
+                <div class="Equipe"> 
+                <h2>Equipe A</h2>
+                <h2 id="scoreA">0</h2>
+                    <button class="Button" onclick="add(1,'scoreA')">+1</button>
+                    <button class="Button" onclick="add(2,'scoreA')">+2</button>
+                    <button class="Button" onclick="add(3,'scoreA')">+3</button>
+                    <button class="Button" onclick="reset('scoreA')">Reset</button>
+                    <button class="Button" onclick="miness(1,'scoreA')">-1</button>
+                    <button class="Button" onclick="miness(2,'scoreA')">-2</button>
+                    <button class="Button" onclick="miness(3,'scoreA')">-3</button>
+                </div>
+                <div class="Equipe">
+                <h2>Equipe B</h2>
+                <h2 id="scoreB">0</h2>
+                    <button class="Button" onclick="add(1,'scoreB')">+1</button>
+                    <button class="Button" onclick="add(2,'scoreB')">+2</button>
+                    <button class="Button" onclick="add(3,'scoreB')">+3</button>
+                    <button class="Button" onclick="reset('scoreB')">Reset</button>
+                    <button class="Button" onclick="miness(1,'scoreB')">-1</button>
+                    <button class="Button" onclick="miness(2,'scoreB')">-2</button>
+                    <button class="Button" onclick="miness(3,'scoreB')">-3</button>
+                </div>
+            </section>
+        </main>
+        <script src="script.js">
+            
+        </script>
+</body>
+</html>
