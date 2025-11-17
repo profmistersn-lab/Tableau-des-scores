@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-color: whitesmoke;
+    font-family: "Comic Sans Ms";
+}
+main{
+    padding: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+  text-align: center;  
+  background-color: blue;
+  color: white;
+  padding: 4px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Equipe{
+    background-color: white;
+    color: red;
+    margin: 16px;
+    padding: 18px;
+}
+.Button{
+    display: inline-block;
+  background-color: #7b38d8;
+  border-radius: 5px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 100px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
