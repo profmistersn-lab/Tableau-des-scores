@@ -14,7 +14,7 @@ main{
 
 header{
   text-align: center;  
-  background-color: blue;
+  background-color: rgb(41, 78, 229);
   color: white;
   padding: 4px;
 }
@@ -25,24 +25,65 @@ section{
 }
 .Equipe{
     background-color: white;
-    color: red;
+    color: rgb(0, 0, 0);
     margin: 16px;
     padding: 18px;
 }
 .Button{
-    display: inline-block;
-  background-color: #7b38d8;
-  border-radius: 5px;
-  border: 4px double #cccccc;
-  color: #eeeeee;
-  text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 100px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 2px;
+    background-color: rgb(41, 78, 229); /* Vert */
+color: white;
+padding: 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.Container{
+    display: flex;
+    flex-direction: row;
+}
+.timer{
+    text-align: center;
+    justify-content: center;
+    font-size: 75px;
+}
+.btn{
+    background-color: rgb(41, 78, 229); /* Vert */
+color: rgb(255, 254, 254);
+padding: 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btntimer{
+    display: flex;
+    justify-content: center;
+}
+#start{
+    background-color: rgb(23, 231, 75);
+}
+#stop{
+    background-color: rgb(229, 41, 41);
+}
+#reset{
+    background-color: rgb(207, 41, 229);
+}
+.btnfaute{
+    background-color: rgb(229, 41, 41); /* Vert */
+color: white;
+padding: 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
 }

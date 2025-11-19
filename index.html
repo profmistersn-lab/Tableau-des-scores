@@ -14,29 +14,53 @@
     </header> 
         <main>
             <section>
+                <div class="Container">
                 <div class="Equipe"> 
                 <h2>Equipe A</h2>
+                <h3>Points</h3>
                 <h2 id="scoreA">0</h2>
+                <h3>Fautes</h3>
+                <h2 id="fautesA">0</h2> 
                     <button class="Button" onclick="add(1,'scoreA')">+1</button>
                     <button class="Button" onclick="add(2,'scoreA')">+2</button>
                     <button class="Button" onclick="add(3,'scoreA')">+3</button>
-                    <button class="Button" onclick="reset('scoreA')">Reset</button>
+                    <button class="Button" onclick="resetpoints('scoreA')">Reset</button>
                     <button class="Button" onclick="miness(1,'scoreA')">-1</button>
                     <button class="Button" onclick="miness(2,'scoreA')">-2</button>
                     <button class="Button" onclick="miness(3,'scoreA')">-3</button>
+                    <div class="fautes">
+                        <div class="equipef">
+                     <button class="btnfaute" onclick="fauteA()">1 faute</button> 
+                    </div>
+                </div>
                 </div>
                 <div class="Equipe">
                 <h2>Equipe B</h2>
+                <h3>Points</h3>
                 <h2 id="scoreB">0</h2>
+                <h3>Fautes</h3>
+                <h2 id="fautesB">0</h2>
                     <button class="Button" onclick="add(1,'scoreB')">+1</button>
                     <button class="Button" onclick="add(2,'scoreB')">+2</button>
                     <button class="Button" onclick="add(3,'scoreB')">+3</button>
-                    <button class="Button" onclick="reset('scoreB')">Reset</button>
+                    <button class="Button" onclick="resetpoints('scoreB')">Reset</button>
                     <button class="Button" onclick="miness(1,'scoreB')">-1</button>
                     <button class="Button" onclick="miness(2,'scoreB')">-2</button>
                     <button class="Button" onclick="miness(3,'scoreB')">-3</button>
+                    <div class="fautes">
+                        <div class="equipef">
+                     <button class="btnfaute" onclick="fauteB()">1 faute</button>
+                    </div>
                 </div>
+                </div>
+            </div>
             </section>
+            <p class="timer" id="timer">10:00</p>
+            <div class="btntimer">
+                <button id="start" class="btn" onclick="startTimer(startTimer)">start</button>
+                <button id="stop" class="btn" onclick="stopTimer(stopTimer)">stop</button>
+                <button id="reset" class="btn" onclick="resetTimer(resetTimer)">reset</button>
+            </div>
         </main>
         <script src="script.js">
             

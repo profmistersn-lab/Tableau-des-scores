@@ -18,7 +18,7 @@ function add(points,equipe){
     document.getElementById(equipe).innerText=score
 
 }
-function reset(selecteur){
+function resetpoints(selecteur){
     //1- Je récupère la valeur du score
         var score=parseInt(document.getElementById(selecteur).innerText)
         console.log(scoreA)
@@ -44,3 +44,74 @@ function miness(points,equipe){
 document.getElementById(equipe).innerText=score
 
 }
+
+var startbis=0
+
+const start=document.getElementById("start")
+const stop=document.getElementById("stop")
+const reset=document.getElementById("reset")
+const timer=document.getElementById("timer")
+let timeLeft=600;
+let interval
+
+function updateTimer() {
+    const minutes=Math.floor(timeLeft/60);
+    const seconds=timeLeft%60
+     timer.innerHTML=minutes.toString().padStart(2,"0")+ ":" +seconds.toString().padStart(2, "0")
+}
+
+
+    
+function startTimer () {
+    start.style="visibility: hidden;"
+    start.hidden=true;
+    start.disabled=true;
+    interval=setInterval(() => {
+        timeLeft--;
+        updateTimer();
+
+        if(timeLeft===0){
+            clearInterval(interval);
+            alert("Time's up!")
+            timeLeft = 600;
+            updateTimer();
+            
+
+        }
+    }, 
+        1000)
+}
+
+function stopTimer() {
+    start.style="visibility: visible;"
+    start.hidden=false;
+    start.disabled=false;
+     clearInterval(interval)
+}
+
+        const resetTimer = () => {
+            clearInterval(interval);
+            timeLeft =  600;
+            updateTimer();
+        }
+var fautes=document.getElementsByClassName(fautesA)
+
+
+function fauteA(){
+    var element = document.getElementById('fautesA'); 
+    var fautes = parseInt(element.innerText) || 0;    
+    fautes = fautes + 1;                               
+    element.innerText = fautes;                        
+    console.log(fautes);
+}
+
+
+function fauteB(){
+    var element = document.getElementById('fautesB'); 
+    var fautes = parseInt(element.innerText) || 0;
+    fautes = fautes + 1;
+    element.innerText = fautes;
+    console.log(fautes);
+}
+
+
