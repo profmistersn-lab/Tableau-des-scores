@@ -121,3 +121,6 @@ function save(){
     document.getElementById("local").innerText=lcl.value
     document.getElementById("visit").innerText=vstrs.value
 }
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var today  = new Date();
+document.getElementById("date").innerText="Le "+ today.toLocaleDateString("fr-FR", options);
