@@ -113,5 +113,11 @@ function fauteB(){
     element.innerText = fautes;
     console.log(fautes);
 }
-
-
+function save(){
+    var lcl=(document.getElementById("lcl"))
+    var vstrs=(document.getElementById("vstrs"))
+    console.log(lcl.value)
+    console.log(vstrs.value)
+    document.getElementById("local").innerText=lcl.value
+    document.getElementById("visit").innerText=vstrs.value
+}

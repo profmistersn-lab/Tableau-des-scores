@@ -13,10 +13,19 @@
     <p>Le 17 novembre 2025</p>
     </header> 
         <main>
+            <div class="write">
+                <form>
+                    <label for="lcl">Locaux</label><br>
+                    <input type="text" id="lcl" name="lcl" value=""><br>
+                    <label for="vstrs">Visiteurs</label><br>
+                    <input type="text" id="vstrs" name="vstrs"><br>
+                </form>
+                <button class="submit" onclick="save(value)">Sauvegarder</button>
+            </div>
             <section>
                 <div class="Container">
                 <div class="Equipe"> 
-                <h2>Equipe A</h2>
+                <h2 id="local">Locaux</h2>
                 <h3>Points</h3>
                 <h2 id="scoreA">0</h2>
                 <h3>Fautes</h3>
@@ -35,7 +44,7 @@
                 </div>
                 </div>
                 <div class="Equipe">
-                <h2>Equipe B</h2>
+                <h2 id="visit">Visiteurs</h2>
                 <h3>Points</h3>
                 <h2 id="scoreB">0</h2>
                 <h3>Fautes</h3>
